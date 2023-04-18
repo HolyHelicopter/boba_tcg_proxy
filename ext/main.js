@@ -80,6 +80,10 @@ chrome.extension.sendRequest(chrome.runtime.id, {
 
         document.getElementById("boba-tcg-id").remove();
 
+        var style = document.createElement('style');
+        style.innerHTML = '.card{border: 1.5px solid black;}';
+        document.head.appendChild(style);
+
         for (const card_string of deck_from_text) {
             if (card_string) {
                 let split_arr = card_string.split(' ');
