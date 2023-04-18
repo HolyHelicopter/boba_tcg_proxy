@@ -81,7 +81,7 @@ chrome.extension.sendRequest(chrome.runtime.id, {
         document.getElementById("boba-tcg-id").remove();
 
         var style = document.createElement('style');
-        style.innerHTML = '.card{border: 1.5px solid black;}';
+        style.innerHTML = '.card{border: 2px solid black;}';
         document.head.appendChild(style);
 
         for (const card_string of deck_from_text) {
